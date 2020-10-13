@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <title>Ekommart</title>
+</head>
+<body>
+    <!--Header-->
+        <header id="header">
+            <div class="conatiner">
+                <div class="row align-center">
+                    <div class="col-lg-2 ">
+                        <div class="logo">
+                            <img src="image/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div onclick="openMenu()" class="menu-open">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <div class="row just-between">
+
+                        <nav class="menu">
+                            <div class="menu-icon">
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-pinterest"></i>
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="close-menu">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <ul class="row list-unstyled">
+                                <li><a href="">home</a></li>
+                                <li><a href="">about</a></li>
+                                <li><a href="">shop</a></li>
+                                <li><a href="">blog</a></li>
+                                <li><a href="">pages</a></li>
+                                <li><a href="">contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="social-ico">
+                                <i class="far fa-user"></i>
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-shopping-basket"></i>
+                        </div>
+                        </div>
+                        <div class="search-input row just-between align-center">
+                        <i class="fas fa-search" style="color: crimson"></i>
+                        <input placeholder="Search products" type="text">
+                        <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!--/Header-->
+    <!--Image-section-->
+        <header id="header-2">
+            <div class="contain">
+                <div class="header-text">
+                <h2>Trending This week</h2>
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </header>
+    <!--/Image-section-->
+    <script>
+        document.querySelector(".close-menu").onclick=function(){
+            document.querySelector(".menu").style="display:none"
+        }
+        function openMenu(){
+            document.querySelector(".menu").style="display:block"
+        }
+    </script>
+</body>
+</html>

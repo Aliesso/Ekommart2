@@ -1,0 +1,119 @@
+        * {
+            font-family: 'Khula', sans-serif;
+        }
+        
+        #header {
+            padding: 15px 0;
+        }
+        
+        #header .close-menu {
+            display: none;
+        }
+        
+        #header .menu-icon {
+            display: none;
+        }
+        
+        #header .menu-open {
+            display: none;
+        }
+        
+        #header .menu li a {
+            text-decoration: none;
+            padding: 5px 10px;
+            color: #222222;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        
+        #header .search-input input {
+            border: none;
+            outline: none;
+            padding: 15px 5px;
+            width: 89%;
+        }
+        
+        #header .search-input button {
+            padding: 5px 20px;
+            background-color: #ef3636;
+            color: floralwhite;
+            border: none;
+            border-radius: 4px;
+            outline: none;
+        }
+        
+        #header .social-ico i {
+            padding: 5px 7px;
+        }
+        
+        #header-2 .header-text h2 {
+            text-align: center;
+        }
+        
+        @media (max-width:768px) {
+            #header .logo {
+                width: 33.333%;
+                margin: auto;
+            }
+            #header .menu-icon {
+                display: block;
+                position: absolute;
+                bottom: 380px;
+                left: 15px;
+                cursor: pointer;
+            }
+            #header .menu-icon i {
+                padding: 0 2px;
+                font-size: 14px;
+            }
+            #header .close-menu {
+                display: block;
+                position: absolute;
+                right: 15px;
+                top: 10px;
+                cursor: pointer;
+            }
+            #header .menu-open {
+                display: block;
+                position: absolute;
+                top: 28px;
+                left: 20px;
+                cursor: pointer;
+                font-size: 1.2em;
+            }
+            #header .menu ul {
+                flex-direction: column;
+            }
+            #header .search-input {
+                display: none;
+            }
+            #header .menu {
+                padding: 30px 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                background: #000;
+                color: #ffffff;
+                width: 50%;
+                display: none;
+            }
+            #header .menu li a {
+                color: #ffffff;
+                font-size: 14px;
+                text-transform: capitalize;
+            }
+            #header .menu li {
+                padding: 5px;
+                border-bottom: 1px solid #363636;
+            }
+            #header .social-ico i {
+                display: none;
+            }
+            #header .social-ico i:nth-child(3) {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                display: block;
+            }
+        }
