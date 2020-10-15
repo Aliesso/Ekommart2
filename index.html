@@ -13,14 +13,14 @@
 <body>
     <!--Header-->
         <header id="header">
-            <div class="conatiner">
-                <div class="row align-center">
+            <div class="container ">
+                <div class="row align-center just-between ">
                     <div class="col-lg-2 ">
                         <div class="logo">
                             <img src="image/logo.svg" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-10">
                         <div onclick="openMenu()" class="menu-open">
                             <i class="fas fa-bars"></i>
                         </div>
@@ -62,18 +62,77 @@
             </div>
         </header>
     <!--/Header-->
-    <!--Image-section-->
-        <header id="header-2">
-            <div class="contain">
-                <div class="header-text">
-                <h2>Trending This week</h2>
+    <!--categories-section-->
+    <section id="Categories">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="cat-item">
+                        <img src="image/1.jpg" alt="">
+                        <div class="cat-text">
+                            <span>creative</span>
+                            <h2>T-shirt</h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-
+                <div class="col-lg-4">
+                    <div class="cat-item">
+                        <img src="image/2.jpg" alt="">
+                        <div class="cat-text">
+                            <span>trending</span>
+                            <h2>home decor</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="cat-item">
+                        <img src="image/3.jpg" alt="">
+                        <div class="cat-text">
+                            <span>Featured</span>
+                            <h2>Accessories</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
-    <!--/Image-section-->
+        </div>
+    </section>
+    <!--/categories-section-->
+    <section id="icon-section"><!--icon-->
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="icon-logo">
+                        <img src="image/icon1-h23.png" alt="">
+                    </div>
+                    <div class="icon-text">
+                        <a href="">Find the Perfect Fit</a>
+                        <p>Everybody is different, which is why we offer styles for every body</p>
+                        <span>Check Out Sizing Guide</span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="icon-logo">
+                        <img src="image/icon2-h23.png" alt="">
+                    </div>
+                    <div class="icon-text">
+                        <a href="">Free Exchanges</a>
+                        <p>One of the many reasons you can shop with peace of mind</p>
+                        <span>Learn More</span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="icon-logo">
+                        <img src="image/icon3-h23.png" alt="">
+                    </div>
+                    <div class="icon-text">
+                        <a href="">Contact Our Seller</a>
+                        <p>They are here to help you. That's quite literally what we pay them for.</p>
+                        <span>Send Us A Message</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/icon-->
     <script>
         document.querySelector(".close-menu").onclick=function(){
             document.querySelector(".menu").style="display:none"
